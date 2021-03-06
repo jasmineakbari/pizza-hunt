@@ -67,6 +67,8 @@ const handlePizzaSubmit = event => {
     })
     .catch(err => {
       console.log(err);
+      // added to save pizza to indexedDB connection
+      saveRecord(formData);
     });
 };
 
